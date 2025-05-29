@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+
+{% block title %}{{ movie.title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        {% if movie.poster_path %}
+            <img src="{{ movie.poster_path|safe_poster_url:'w500' }}" class="img-fluid rounded movie-poster mb-3" alt="{{ movie.title }}">
+        {% else %}
+            <img src="https://via.placeholder.com/500x750?text=No+Poster" class="img-fluid rounded movie-poster mb-3" alt="No Poster">
+        {% endif %}
+    </div>
+    <div class="col-md-8">
+        <h1>{{ movie.title }}</h1>
+        <p class="lead text-muted">{{ movie.overview }}</p>
+
+        <p><strong>Дата виходу:</strong> {% if movie.release_date %}{{ movie.release_date|date:"d M Y" }}{% else %}Невідомо{% endif %}</p>
+
+        {# ОНОВЛЕНО: Тепер використовуємо movie.genres_display напряму #}
+        <p><strong>Жанри:</strong>
+            {% if movie.genres_display %}
+                {{ movie.genres_display|split_and_badge }} {# Використовуємо split_and_badge для форматування #}
+            {% else %}
+                Немає інформації про жанри.
+            {% endif %}
+        </p>
+
+        {# ДОДАНО НОВІ ПОЛЯ #}
+        <p><strong>Режисери:</strong>
+            {% if movie.directors_display %}
+                {{ movie.directors_display }}
+            {% else %}
+                Немає інформації про режисерів.
+            {% endif %}
+        </p>
+        <p><strong>Актори:</strong>
+            {% if movie.cast_display %}
+                {{ movie.cast_display }}
+            {% else %}
+                Немає інформації про акторів.
+            {% endif %}
+        </p>
+        <p><strong>Країни виробництва:</strong>
+            {% if movie.production_countries_display %}
+                {{ movie.production_countries_display }}
+            {% else %}
+                Немає інформації про країни виробництва.
+            {% endif %}
+        </p>
+        <p><strong>Мови:</strong>
+            {% if movie.spoken_languages_display %}
+                {{ movie.spoken_languages_display }}
+            {% else %}
+                Немає інформації про мови.
+            {% endif %}
+        </p>
+        <p><strong>Ключові слова:</strong>
+            {% if movie.keywords_display %}
+                {{ movie.keywords_display }}
+            {% else %}
+                Немає інформації про ключові слова.
+            {% endif %}
+        </p>
+        {# КІНЕЦЬ НОВИХ ПОЛІВ #}
+
+
+        <p><strong>Середній рейтинг (TMDb):</strong> {{ movie.vote_average|floatformat:1 }} / 10 ({{ movie.vote_count }} голосів)</p>
+        {% if avg_rating %}
+            <p><strong>Середній рейтинг користувачів:</strong> {{ avg_rating|floatformat:1 }} / 10</p>
+        {% else %}
+            <p>Цей фільм ще не має оцінок від користувачів.</p>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+            <hr>
+            <h4>Ваша оцінка:</h4>
+            <form id="rating-form">
+                {% csrf_token %}
+                {% if user_rating %}
+                    <input type="hidden" name="rating_id" value="{{ user_rating.id }}">
+                    <input type="hidden" name="_method" value="PUT">
+                {% endif %}
+                <input type="hidden" name="movie" value="{{ movie.id }}">
+                <div class="mb-3">
+                    <label for="id_score" class="form-label">Ваша оцінка (1-10):</label>
+                    <input type="number" name="score" id="id_score" class="form-control"
+                           min="1" max="10" value="{% if user_rating %}{{ user_rating.score }}{% endif %}" required>
+                </div>
+                <button type="submit" class="btn btn-success">{% if user_rating %}Оновити оцінку{% else %}Оцінити фільм{% endif %}</button>
+                {% if user_rating %}
+                    <button type="button" class="btn btn-danger" onclick="deleteRating({{ user_rating.id }})">Видалити оцінку</button>
+                {% endif %}
+            </form>
+        {% else %}
+            <p class="mt-4">
+                <a href="{% url 'login' %}">Увійдіть</a> або <a href="{% url 'register' %}">зареєструйтесь</a>, щоб оцінити цей фільм.
+            </p>
+        {% endif %}
+    </div>
+</div>
+
+{% if user.is_authenticated %}
+<script>
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    const csrftoken = getCookie('csrftoken');
+
+    function deleteRating(ratingId) {
+        if (confirm('Ви впевнені, що хочете видалити цю оцінку?')) {
+            fetch(`/api/ratings/${ratingId}/`, {
+                method: 'DELETE',
+                headers: {
+                    'X-CSRFToken': csrftoken,
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Перевіряємо, чи є вміст у відповіді
+                    if (response.status === 204) { // No Content for successful DELETE
+                        alert('Оцінка успішно видалена.');
+                        window.location.reload();
+                    } else {
+                        return response.json().then(json => {
+                            alert('Оцінка успішно видалена.'); // DRF може повертати повідомлення
+                            window.location.reload();
+                        });
+                    }
+                } else {
+                    response.json().then(error => {
+                        alert('Помилка видалення оцінки: ' + JSON.stringify(error));
+                        console.error('API Error:', error);
+                    }).catch(() => {
+                        alert('Помилка видалення оцінки (невідома відповідь).');
+                        console.error('API Error: No JSON response for error status ' + response.status);
+                    });
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    }
+
+
+    // Обробка форми оцінки через Fetch API для PUT/POST
+    document.getElementById('rating-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const ratingId = form.querySelector('input[name="rating_id"]')?.value;
+        const method = ratingId ? 'PUT' : 'POST';
+        const url = ratingId ? `/api/ratings/${ratingId}/` : `/api/ratings/`;
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // Видаляємо допоміжні поля
+        if (data['_method']) delete data['_method'];
+        if (data['rating_id']) delete data['rating_id'];
+
+        // Перетворюємо movie ID в число
+        data['movie'] = parseInt(data['movie']);
+        data['score'] = parseInt(data['score']);
+
+        fetch(url, {
+            method: method,
+            headers: {
+                'X-CSRFToken': csrftoken,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json().then(json => ({ status: response.status, body: json })))
+        .then(({ status, body }) => {
+            if (status >= 200 && status < 300) {
+                alert('Оцінка успішно збережена!');
+                window.location.reload();
+            } else {
+                alert('Помилка збереження оцінки: ' + JSON.stringify(body));
+                console.error('API Error:', body);
+            }
+        })
+        .catch(error => console.error('Fetch Error:', error));
+    });
+</script>
+{% endif %}
+
+{% endblock %}

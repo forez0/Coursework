@@ -1,0 +1,1322 @@
+[2025-05-26 16:03:47,476: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-26 16:03:47,478: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-26 16:03:47,479: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-26 16:03:47,489: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-26 16:03:47,490: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-26 16:03:47,503: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Gossip, Agent, Tasks, Control, DelayedDelivery, event loop}
+[2025-05-26 16:03:47,526: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-26 16:03:47,526: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:47,527: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-26 16:03:47,527: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-26 16:03:47,539: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-26 16:03:47,539: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:47,539: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-26 16:03:47,549: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:47,550: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-26 16:03:47,559: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:47,559: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:47,560: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-26 16:03:47,560: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-26 16:03:48,561: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:48,608: INFO/MainProcess] mingle: all alone
+[2025-05-26 16:03:48,608: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:48,608: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-26 16:03:48,627: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:48,627: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-26 16:03:48,632: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:48,632: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-26 16:03:48,649: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:03:48,650: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-26 16:03:48,650: INFO/MainProcess] celery@DESKTOP-9GU9P2U ready.
+[2025-05-26 16:03:48,650: DEBUG/MainProcess] basic.qos: prefetch_count->64
+[2025-05-26 16:03:49,566: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:50,568: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:51,572: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:52,572: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:53,576: DEBUG/MainProcess] Timer wake-up! Next ETA 0.04700000000048021 secs.
+[2025-05-26 16:03:53,625: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:54,625: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9369999999998981 secs.
+[2025-05-26 16:03:55,566: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:56,568: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:57,572: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:03:58,572: DEBUG/MainProcess] Timer wake-up! Next ETA 0.06300000000010186 secs.
+[2025-05-26 16:03:58,636: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9369999999998981 secs.
+[2025-05-26 16:03:59,577: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:04:00,579: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:04:01,582: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:04:02,584: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:04:03,478: INFO/MainProcess] Task recommender.tasks.generate_recommendations_task[5f39620f-d553-4727-996e-810f1cf2196b] received
+[2025-05-26 16:04:03,478: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x000002240228A480> (args:('recommender.tasks.generate_recommendations_task', '5f39620f-d553-4727-996e-810f1cf2196b', {'lang': 'py', 'task': 'recommender.tasks.generate_recommendations_task', 'id': '5f39620f-d553-4727-996e-810f1cf2196b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '5f39620f-d553-4727-996e-810f1cf2196b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'user_id': 101}", 'origin': 'gen4560@DESKTOP-9GU9P2U', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'correlation_id': '5f39620f-d553-4727-996e-810f1cf2196b', 'reply_to': 'a04efd8f-5fcb-3bf5-98ba-4178cdeaf8f5', 'delivery_mode': 2, 'delivery_info': {'exchange': '', 'routing_key': 'celery'}, 'priority': 0, 'body_encoding': 'base64', 'delivery_tag': '5a8c3d45-f263-454e-ac8a-f9eb3fa62b23'}, 'reply_to': 'a04efd8f-5fcb-3bf5-98ba-4178cdeaf8f5', 'correlation_id': '5f39620f-d553-4727-996e-810f1cf2196b', 'hostname':... kwargs:{})
+[2025-05-26 16:04:03,489: INFO/MainProcess] [5f39620f-d553-4727-996e-810f1cf2196b] Starting recommendation generation task (force_retrain=False).
+[2025-05-26 16:04:03,489: INFO/MainProcess] Cache invalid or force_retrain enabled. Preparing data and training new LightFM model...
+[2025-05-26 16:04:03,489: INFO/MainProcess] Disk cache cleared.
+[2025-05-26 16:04:03,489: INFO/MainProcess] Preparing fresh LightFM data from database...
+[2025-05-26 16:04:03,495: INFO/MainProcess] Memory usage: 71.5% (total: 15741MB, used: 11251MB)
+[2025-05-26 16:04:03,561: INFO/MainProcess] Loaded 101 users, 1000 movies, 3095 ratings for training.
+[2025-05-26 16:04:03,571: INFO/MainProcess] Found 7245 unique item features.
+[2025-05-26 16:04:03,572: INFO/MainProcess] No user features to process.
+[2025-05-26 16:04:03,573: INFO/MainProcess] Dataset fitted successfully. Users mapped: 101, Items mapped: 1000
+[2025-05-26 16:04:03,574: INFO/MainProcess] Total features: 7245 item features, 0 user features.
+[2025-05-26 16:04:03,586: DEBUG/MainProcess] Timer wake-up! Next ETA 0.046999999998661224 secs.
+[2025-05-26 16:04:03,634: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:04:03,864: INFO/MainProcess] Built interactions matrix: (101, 1000), 3095 non-zero entries.
+[2025-05-26 16:04:03,876: INFO/MainProcess] Built item features matrix: (1000, 8245), 16441 non-zero entries.
+[2025-05-26 16:04:03,876: WARNING/MainProcess] No user features data available for LightFM. User features matrix will be None.
+[2025-05-26 16:04:03,882: INFO/MainProcess] Memory usage: 71.8% (total: 15741MB, used: 11305MB)
+[2025-05-26 16:04:03,903: INFO/MainProcess] Starting LightFM model training...
+[2025-05-26 16:04:03,912: INFO/MainProcess] Memory usage: 71.6% (total: 15741MB, used: 11271MB)
+[2025-05-26 16:04:03,912: INFO/MainProcess] Model params: components=30, lr=0.05, item_alpha=1e-06, user_alpha=1e-06, epochs=20, loss=warp.
+[2025-05-26 16:04:03,913: INFO/MainProcess] Data stats: users=101, items=1000, interactions=3095.
+[2025-05-26 16:04:03,913: INFO/MainProcess] Item features matrix: (1000, 8245), 16441 non-zero entries.
+[2025-05-26 16:04:04,636: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9530000000013388 secs.
+[2025-05-26 16:04:07,187: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:09:40,590: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-26 16:09:40,593: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-26 16:09:40,594: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2025-05-26 16:09:40,605: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-26 16:09:40,607: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-26 16:09:40,621: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Tasks, Control, Gossip, DelayedDelivery, Agent, Heart, event loop}
+[2025-05-26 16:09:40,643: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-26 16:09:40,644: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:40,644: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-26 16:09:40,644: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-26 16:09:40,656: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-26 16:09:40,657: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:40,657: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-26 16:09:40,666: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:40,667: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-26 16:09:40,667: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-26 16:09:41,714: INFO/MainProcess] mingle: all alone
+[2025-05-26 16:09:41,714: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:41,715: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-26 16:09:41,720: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:41,720: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-26 16:09:41,735: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:41,736: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-26 16:09:41,744: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:09:41,752: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:41,752: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-26 16:09:41,760: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:09:41,760: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-26 16:09:41,760: INFO/MainProcess] celery@DESKTOP-9GU9P2U ready.
+[2025-05-26 16:09:41,760: DEBUG/MainProcess] basic.qos: prefetch_count->64
+[2025-05-26 16:09:41,766: INFO/MainProcess] Task recommender.tasks.generate_recommendations_task[f4300de7-3fa0-4cf9-8e58-09f2f94454e2] received
+[2025-05-26 16:09:41,766: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x000002069BCAE480> (args:('recommender.tasks.generate_recommendations_task', 'f4300de7-3fa0-4cf9-8e58-09f2f94454e2', {'lang': 'py', 'task': 'recommender.tasks.generate_recommendations_task', 'id': 'f4300de7-3fa0-4cf9-8e58-09f2f94454e2', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f4300de7-3fa0-4cf9-8e58-09f2f94454e2', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'user_id': 101}", 'origin': 'gen4560@DESKTOP-9GU9P2U', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'correlation_id': 'f4300de7-3fa0-4cf9-8e58-09f2f94454e2', 'reply_to': 'a04efd8f-5fcb-3bf5-98ba-4178cdeaf8f5', 'delivery_mode': 2, 'delivery_info': {'exchange': '', 'routing_key': 'celery'}, 'priority': 0, 'body_encoding': 'base64', 'delivery_tag': '8e9fbbde-68ef-4a09-899c-caa2238ed7f2'}, 'reply_to': 'a04efd8f-5fcb-3bf5-98ba-4178cdeaf8f5', 'correlation_id': 'f4300de7-3fa0-4cf9-8e58-09f2f94454e2', 'hostname':... kwargs:{})
+[2025-05-26 16:09:41,774: INFO/MainProcess] [f4300de7-3fa0-4cf9-8e58-09f2f94454e2] Starting recommendation generation task (force_retrain=False).
+[2025-05-26 16:09:41,775: INFO/MainProcess] Cache invalid or force_retrain enabled. Preparing data and training new LightFM model...
+[2025-05-26 16:09:41,775: INFO/MainProcess] Disk cache cleared.
+[2025-05-26 16:09:41,775: INFO/MainProcess] Preparing fresh LightFM data from database...
+[2025-05-26 16:09:41,780: INFO/MainProcess] Memory usage: 70.0% (total: 15741MB, used: 11014MB)
+[2025-05-26 16:09:41,836: INFO/MainProcess] Loaded 101 users, 1000 movies, 3095 ratings for training.
+[2025-05-26 16:09:41,847: INFO/MainProcess] Found 7245 unique item features.
+[2025-05-26 16:09:41,848: INFO/MainProcess] No user features to process.
+[2025-05-26 16:09:41,849: INFO/MainProcess] Dataset fitted successfully. Users mapped: 101, Items mapped: 1000
+[2025-05-26 16:09:41,849: INFO/MainProcess] Total features: 7245 item features, 0 user features.
+[2025-05-26 16:09:42,121: INFO/MainProcess] Built interactions matrix: (101, 1000), 3095 non-zero entries.
+[2025-05-26 16:09:42,133: INFO/MainProcess] Built item features matrix: (1000, 8245), 16441 non-zero entries.
+[2025-05-26 16:09:42,133: WARNING/MainProcess] No user features data available for LightFM. User features matrix will be None.
+[2025-05-26 16:09:42,138: INFO/MainProcess] Memory usage: 70.3% (total: 15741MB, used: 11060MB)
+[2025-05-26 16:09:42,157: INFO/MainProcess] Starting LightFM model training...
+[2025-05-26 16:09:42,162: INFO/MainProcess] Memory usage: 70.1% (total: 15741MB, used: 11030MB)
+[2025-05-26 16:09:42,163: INFO/MainProcess] Model params: components=30, lr=0.05, item_alpha=1e-06, user_alpha=1e-06, epochs=20, loss=warp.
+[2025-05-26 16:09:42,163: INFO/MainProcess] Data stats: users=101, items=1000, interactions=3095.
+[2025-05-26 16:09:42,163: INFO/MainProcess] Item features matrix: (1000, 8245), 16441 non-zero entries.
+[2025-05-26 16:09:52,660: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:17:35,145: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-26 16:17:35,148: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-26 16:17:35,148: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-26 16:17:35,161: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-26 16:17:35,161: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-26 16:17:35,176: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Tasks, DelayedDelivery, Agent, Control, Gossip, event loop}
+[2025-05-26 16:17:35,198: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-26 16:17:35,198: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:35,198: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-26 16:17:35,199: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-26 16:17:35,213: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-26 16:17:35,213: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:35,213: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-26 16:17:35,223: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:35,223: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-26 16:17:35,234: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:35,234: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-26 16:17:35,234: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-26 16:17:35,234: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-26 16:17:36,235: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9840000000003783 secs.
+[2025-05-26 16:17:36,284: INFO/MainProcess] mingle: all alone
+[2025-05-26 16:17:36,284: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:36,285: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-26 16:17:36,291: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:36,291: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-26 16:17:36,310: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:36,310: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-26 16:17:36,329: DEBUG/MainProcess] ^-- substep ok
+[2025-05-26 16:17:36,329: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-26 16:17:36,330: INFO/MainProcess] celery@DESKTOP-9GU9P2U ready.
+[2025-05-26 16:17:36,330: DEBUG/MainProcess] basic.qos: prefetch_count->64
+[2025-05-26 16:17:36,336: INFO/MainProcess] Task recommender.tasks.generate_recommendations_task[dae65b20-f899-4a78-9904-d84dade83a28] received
+[2025-05-26 16:17:36,336: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x00000299B4A3A480> (args:('recommender.tasks.generate_recommendations_task', 'dae65b20-f899-4a78-9904-d84dade83a28', {'lang': 'py', 'task': 'recommender.tasks.generate_recommendations_task', 'id': 'dae65b20-f899-4a78-9904-d84dade83a28', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'dae65b20-f899-4a78-9904-d84dade83a28', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'user_id': 1}", 'origin': 'gen8816@DESKTOP-9GU9P2U', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'redelivered': True, 'properties': {'correlation_id': 'dae65b20-f899-4a78-9904-d84dade83a28', 'reply_to': 'c795aef8-9cc8-3213-9b80-45991bd1b406', 'delivery_mode': 2, 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'redelivered': True}, 'priority': 0, 'body_encoding': 'base64', 'delivery_tag': 'e9feaabb-2e42-47b5-9b69-752eb30770d5'}, 'reply_to': 'c795aef8-9cc8-3213-9b80-45991bd1b406', 'correlation_id':... kwargs:{})
+[2025-05-26 16:17:36,357: INFO/MainProcess] [dae65b20-f899-4a78-9904-d84dade83a28] Starting recommendation generation task (force_retrain=False).
+[2025-05-26 16:17:36,357: INFO/MainProcess] Cache invalid or force_retrain enabled. Preparing data and training new LightFM model...
+[2025-05-26 16:17:36,357: INFO/MainProcess] Disk cache cleared.
+[2025-05-26 16:17:36,357: INFO/MainProcess] Preparing fresh LightFM data from database...
+[2025-05-26 16:17:36,362: INFO/MainProcess] Memory usage: 75.3% (total: 15741MB, used: 11849MB)
+[2025-05-26 16:17:36,420: INFO/MainProcess] Loaded 101 users, 1000 movies, 3095 ratings for training.
+[2025-05-26 16:17:36,430: INFO/MainProcess] Found 7245 unique item features.
+[2025-05-26 16:17:36,430: INFO/MainProcess] No user features to process.
+[2025-05-26 16:17:36,432: INFO/MainProcess] Dataset fitted successfully. Users mapped: 101, Items mapped: 1000
+[2025-05-26 16:17:36,433: INFO/MainProcess] Total features: 7245 item features, 0 user features.
+[2025-05-26 16:17:36,728: INFO/MainProcess] Built interactions matrix: (101, 1000), 3095 non-zero entries.
+[2025-05-26 16:17:36,742: INFO/MainProcess] Built item features matrix: (1000, 8245), 16441 non-zero entries.
+[2025-05-26 16:17:36,743: WARNING/MainProcess] No user features data available for LightFM. User features matrix will be None.
+[2025-05-26 16:17:36,749: INFO/MainProcess] Memory usage: 75.7% (total: 15741MB, used: 11919MB)
+[2025-05-26 16:17:36,773: INFO/MainProcess] Starting LightFM model training...
+[2025-05-26 16:17:36,779: INFO/MainProcess] Memory usage: 75.5% (total: 15741MB, used: 11892MB)
+[2025-05-26 16:17:36,780: INFO/MainProcess] Model params: components=30, lr=0.05, item_alpha=1e-06, user_alpha=1e-06, epochs=20, loss=warp.
+[2025-05-26 16:17:36,780: INFO/MainProcess] Data stats: users=101, items=1000, interactions=3095.
+[2025-05-26 16:17:36,780: INFO/MainProcess] Item features matrix: (1000, 8245), 16441 non-zero entries.
+[2025-05-26 16:17:36,929: INFO/MainProcess] Epoch 1/20 - AUC: 0.5771
+[2025-05-26 16:17:36,936: INFO/MainProcess] Memory usage: 75.6% (total: 15741MB, used: 11902MB)
+[2025-05-26 16:17:40,379: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9369999999998981 secs.
+[2025-05-27 00:04:57,433: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2025-05-27 00:04:57,441: DEBUG/MainProcess] | Worker: Building graph...
+[2025-05-27 00:04:57,442: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2025-05-27 00:04:57,495: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2025-05-27 00:04:57,497: DEBUG/MainProcess] | Consumer: Building graph...
+[2025-05-27 00:04:57,525: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Gossip, Heart, Tasks, DelayedDelivery, Control, event loop}
+[2025-05-27 00:04:57,558: DEBUG/MainProcess] | Worker: Starting Pool
+[2025-05-27 00:04:57,559: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:57,560: DEBUG/MainProcess] | Worker: Starting Consumer
+[2025-05-27 00:04:57,561: DEBUG/MainProcess] | Consumer: Starting Connection
+[2025-05-27 00:04:57,580: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-05-27 00:04:57,580: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:57,580: DEBUG/MainProcess] | Consumer: Starting Events
+[2025-05-27 00:04:57,589: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:57,590: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2025-05-27 00:04:57,590: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-27 00:04:58,644: INFO/MainProcess] mingle: all alone
+[2025-05-27 00:04:58,645: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:58,645: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2025-05-27 00:04:58,655: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:04:58,665: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:58,665: DEBUG/MainProcess] | Consumer: Starting Heart
+[2025-05-27 00:04:58,674: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:58,675: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2025-05-27 00:04:58,680: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:58,681: DEBUG/MainProcess] | Consumer: Starting Control
+[2025-05-27 00:04:58,699: DEBUG/MainProcess] ^-- substep ok
+[2025-05-27 00:04:58,699: DEBUG/MainProcess] | Consumer: Starting event loop
+[2025-05-27 00:04:58,700: INFO/MainProcess] celery@DESKTOP-9GU9P2U ready.
+[2025-05-27 00:04:58,700: DEBUG/MainProcess] basic.qos: prefetch_count->64
+[2025-05-27 00:04:58,716: INFO/MainProcess] Task recommender.tasks.import_popular_movies_task[3480ef88-817b-4335-8219-0fe54416c150] received
+[2025-05-27 00:04:58,716: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x000001D002F9A480> (args:('recommender.tasks.import_popular_movies_task', '3480ef88-817b-4335-8219-0fe54416c150', {'lang': 'py', 'task': 'recommender.tasks.import_popular_movies_task', 'id': '3480ef88-817b-4335-8219-0fe54416c150', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '3480ef88-817b-4335-8219-0fe54416c150', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': "{'num_pages': 5}", 'origin': 'gen17260@DESKTOP-9GU9P2U', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'correlation_id': '3480ef88-817b-4335-8219-0fe54416c150', 'reply_to': 'cfc3d474-7da5-345e-9bb7-f573d3e81a45', 'delivery_mode': 2, 'delivery_info': {'exchange': '', 'routing_key': 'celery'}, 'priority': 0, 'body_encoding': 'base64', 'delivery_tag': '30adb4f9-4e59-44b8-9e53-d460c07f9b2e'}, 'reply_to': 'cfc3d474-7da5-345e-9bb7-f573d3e81a45', 'correlation_id': '3480ef88-817b-4335-8219-0fe54416c150', 'hostname':... kwargs:{})
+[2025-05-27 00:04:58,726: INFO/MainProcess] Starting import of popular movies from TMDb for 5 pages...
+[2025-05-27 00:04:58,738: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:04:58,927: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/popular?page=1&api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:04:58,980: DEBUG/MainProcess] Fetched and cached movie/popular with params {'page': 1, 'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:04:58,984: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:04:59,148: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/950387?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:04:59,151: DEBUG/MainProcess] Fetched and cached movie/950387 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:04:59,155: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:04:59,349: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/950387/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:04:59,353: DEBUG/MainProcess] Fetched and cached movie/950387/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:04:59,356: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:04:59,510: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/950387/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:04:59,512: DEBUG/MainProcess] Fetched and cached movie/950387/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:04:59,530: INFO/MainProcess] Imported new movie: Minecraft: Фільм (TMDB ID: 950387)
+[2025-05-27 00:04:59,533: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:04:59,656: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:04:59,790: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/552524?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:04:59,794: DEBUG/MainProcess] Fetched and cached movie/552524 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:04:59,798: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:00,116: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/552524/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:00,170: DEBUG/MainProcess] Fetched and cached movie/552524/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:00,176: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:00,394: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/552524/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:00,396: DEBUG/MainProcess] Fetched and cached movie/552524/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:00,403: INFO/MainProcess] Imported new movie: Ліло і Стіч (TMDB ID: 552524)
+[2025-05-27 00:05:00,408: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:00,571: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/574475?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:00,574: DEBUG/MainProcess] Fetched and cached movie/574475 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:00,578: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:00,658: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01599999999996271 secs.
+[2025-05-27 00:05:00,677: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:00,743: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/574475/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:00,789: DEBUG/MainProcess] Fetched and cached movie/574475/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:00,793: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:00,965: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/574475/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:00,967: DEBUG/MainProcess] Fetched and cached movie/574475/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:00,976: INFO/MainProcess] Imported new movie: Пункт призначення: Родове прокляття (TMDB ID: 574475)
+[2025-05-27 00:05:00,980: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:01,132: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1232546?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:01,135: DEBUG/MainProcess] Fetched and cached movie/1232546 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:01,139: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:01,303: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1232546/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:01,306: DEBUG/MainProcess] Fetched and cached movie/1232546/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:01,310: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:01,477: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1232546/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:01,480: DEBUG/MainProcess] Fetched and cached movie/1232546/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:01,488: INFO/MainProcess] Imported new movie: Until Dawn: До світанку (TMDB ID: 1232546)
+[2025-05-27 00:05:01,491: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:01,649: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/575265?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:01,653: DEBUG/MainProcess] Fetched and cached movie/575265 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:01,656: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:01,678: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:01,816: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/575265/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:01,870: DEBUG/MainProcess] Fetched and cached movie/575265/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:01,873: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:02,024: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/575265/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:02,029: DEBUG/MainProcess] Fetched and cached movie/575265/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:02,038: INFO/MainProcess] Imported new movie: Місія неможлива: Фінальна розплата (TMDB ID: 575265)
+[2025-05-27 00:05:02,044: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:02,321: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1197306?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:02,324: DEBUG/MainProcess] Fetched and cached movie/1197306 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:02,329: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:02,508: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1197306/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:02,559: DEBUG/MainProcess] Fetched and cached movie/1197306/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:02,563: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:02,681: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9840000000000373 secs.
+[2025-05-27 00:05:02,729: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1197306/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:02,732: DEBUG/MainProcess] Fetched and cached movie/1197306/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:02,739: INFO/MainProcess] Imported new movie: Профі (TMDB ID: 1197306)
+[2025-05-27 00:05:02,743: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:03,092: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/896536?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:03,095: DEBUG/MainProcess] Fetched and cached movie/896536 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:03,098: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:03,263: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/896536/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:03,310: DEBUG/MainProcess] Fetched and cached movie/896536/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:03,313: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:03,470: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/896536/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:03,472: DEBUG/MainProcess] Fetched and cached movie/896536/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:03,479: INFO/MainProcess] Imported new movie: Очі: Легенда Карпат (TMDB ID: 896536)
+[2025-05-27 00:05:03,482: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:03,646: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/447273?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:03,653: DEBUG/MainProcess] Fetched and cached movie/447273 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:03,659: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:03,667: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:03,823: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/447273/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:03,828: DEBUG/MainProcess] Fetched and cached movie/447273/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:03,831: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:03,987: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/447273/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:03,989: DEBUG/MainProcess] Fetched and cached movie/447273/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:03,996: INFO/MainProcess] Imported new movie: Білосніжка (TMDB ID: 447273)
+[2025-05-27 00:05:03,999: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:04,152: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1241436?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:04,155: DEBUG/MainProcess] Fetched and cached movie/1241436 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:04,159: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:04,337: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1241436/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:04,390: DEBUG/MainProcess] Fetched and cached movie/1241436/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:04,394: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:04,594: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1241436/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:04,597: DEBUG/MainProcess] Fetched and cached movie/1241436/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:04,603: INFO/MainProcess] Imported new movie: Бойові дії (TMDB ID: 1241436)
+[2025-05-27 00:05:04,607: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:04,668: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01599999999996271 secs.
+[2025-05-27 00:05:04,687: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:04,766: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1098006?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:04,768: DEBUG/MainProcess] Fetched and cached movie/1098006 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:04,772: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:04,924: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1098006/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:04,969: DEBUG/MainProcess] Fetched and cached movie/1098006/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:04,972: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:05,148: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1098006/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:05,150: DEBUG/MainProcess] Fetched and cached movie/1098006/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:05,157: INFO/MainProcess] Imported new movie: Джерело вічної молодості (TMDB ID: 1098006)
+[2025-05-27 00:05:05,160: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:05,313: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1001414?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:05,316: DEBUG/MainProcess] Fetched and cached movie/1001414 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:05,319: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:05,478: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1001414/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:05,482: DEBUG/MainProcess] Fetched and cached movie/1001414/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:05,485: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:05,640: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1001414/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:05,643: DEBUG/MainProcess] Fetched and cached movie/1001414/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:05,649: INFO/MainProcess] Imported new movie: Вулиця страху: Королева випускного (TMDB ID: 1001414)
+[2025-05-27 00:05:05,652: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:05,688: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:05,806: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1480799?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:05,809: DEBUG/MainProcess] Fetched and cached movie/1480799 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:05,813: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:05,972: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1480799/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:05,975: DEBUG/MainProcess] Fetched and cached movie/1480799/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:05,979: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:06,133: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1480799/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:06,136: DEBUG/MainProcess] Fetched and cached movie/1480799/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:06,142: INFO/MainProcess] Imported new movie: The Great Escape (TMDB ID: 1480799)
+[2025-05-27 00:05:06,145: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:06,334: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/977294?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:06,337: DEBUG/MainProcess] Fetched and cached movie/977294 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:06,340: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:06,511: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/977294/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:06,559: DEBUG/MainProcess] Fetched and cached movie/977294/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:06,562: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:06,692: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:06,749: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/977294/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:06,751: DEBUG/MainProcess] Fetched and cached movie/977294/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:06,758: INFO/MainProcess] Imported new movie: Олов'яний солдат (TMDB ID: 977294)
+[2025-05-27 00:05:06,761: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:06,977: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1297028?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:06,980: DEBUG/MainProcess] Fetched and cached movie/1297028 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:06,985: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:07,155: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1297028/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:07,159: DEBUG/MainProcess] Fetched and cached movie/1297028/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:07,162: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:07,328: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1297028/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:07,331: DEBUG/MainProcess] Fetched and cached movie/1297028/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:07,341: INFO/MainProcess] Imported new movie: Розаріо (TMDB ID: 1297028)
+[2025-05-27 00:05:07,345: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:07,503: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/986056?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:07,506: DEBUG/MainProcess] Fetched and cached movie/986056 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:07,510: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:07,693: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000000509 secs.
+[2025-05-27 00:05:07,697: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/986056/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:07,700: DEBUG/MainProcess] Fetched and cached movie/986056/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:07,705: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:07,869: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/986056/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:07,871: DEBUG/MainProcess] Fetched and cached movie/986056/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:07,880: INFO/MainProcess] Imported new movie: Громовержці* (TMDB ID: 986056)
+[2025-05-27 00:05:07,884: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:08,050: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233069?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:08,052: DEBUG/MainProcess] Fetched and cached movie/1233069 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:08,057: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:08,230: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233069/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:08,279: DEBUG/MainProcess] Fetched and cached movie/1233069/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:08,282: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:08,458: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233069/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:08,461: DEBUG/MainProcess] Fetched and cached movie/1233069/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:08,467: INFO/MainProcess] Imported new movie: Поза юрисдикцією (TMDB ID: 1233069)
+[2025-05-27 00:05:08,469: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:08,627: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1094473?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:08,630: DEBUG/MainProcess] Fetched and cached movie/1094473 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:08,633: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:08,663: DEBUG/MainProcess] Timer wake-up! Next ETA 0.03099999999994907 secs.
+[2025-05-27 00:05:08,698: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:08,787: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1094473/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:08,791: DEBUG/MainProcess] Fetched and cached movie/1094473/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:08,795: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:08,957: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1094473/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:08,962: DEBUG/MainProcess] Fetched and cached movie/1094473/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:08,972: INFO/MainProcess] Imported new movie: Bambi, l'histoire d'une vie dans les bois (TMDB ID: 1094473)
+[2025-05-27 00:05:08,978: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:09,172: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/897160?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:09,175: DEBUG/MainProcess] Fetched and cached movie/897160 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:09,178: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:09,343: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/897160/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:09,388: DEBUG/MainProcess] Fetched and cached movie/897160/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:09,394: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:09,541: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/897160/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:09,546: DEBUG/MainProcess] Fetched and cached movie/897160/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:09,558: INFO/MainProcess] Imported new movie: Відважний громадянин (TMDB ID: 897160)
+[2025-05-27 00:05:09,563: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:09,698: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:09,746: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1144430?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:09,748: DEBUG/MainProcess] Fetched and cached movie/1144430 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:09,752: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:09,929: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1144430/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:09,979: DEBUG/MainProcess] Fetched and cached movie/1144430/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:09,983: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:10,138: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1144430/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:10,141: DEBUG/MainProcess] Fetched and cached movie/1144430/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:10,150: INFO/MainProcess] Imported new movie: Загублена куля 3 (TMDB ID: 1144430)
+[2025-05-27 00:05:10,153: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:10,339: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/324544?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:10,342: DEBUG/MainProcess] Fetched and cached movie/324544 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:10,345: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:10,519: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/324544/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:10,569: DEBUG/MainProcess] Fetched and cached movie/324544/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:10,573: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:10,700: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:10,750: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/324544/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:10,751: DEBUG/MainProcess] Fetched and cached movie/324544/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:10,759: INFO/MainProcess] Imported new movie: У загублених землях (TMDB ID: 324544)
+[2025-05-27 00:05:10,762: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:11,023: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/popular?page=2&api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:11,070: DEBUG/MainProcess] Fetched and cached movie/popular with params {'page': 2, 'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:11,080: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:11,244: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1225915?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:11,249: DEBUG/MainProcess] Fetched and cached movie/1225915 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:11,256: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:11,414: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1225915/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:11,470: DEBUG/MainProcess] Fetched and cached movie/1225915/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:11,478: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:11,639: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1225915/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:11,644: DEBUG/MainProcess] Fetched and cached movie/1225915/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:11,699: INFO/MainProcess] Imported new movie: Викрадач коштовностей: Пограбування починається (TMDB ID: 1225915)
+[2025-05-27 00:05:11,701: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9840000000000373 secs.
+[2025-05-27 00:05:11,706: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:11,892: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1092073?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:11,897: DEBUG/MainProcess] Fetched and cached movie/1092073 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:11,905: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:12,062: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1092073/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:12,067: DEBUG/MainProcess] Fetched and cached movie/1092073/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:12,075: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:12,244: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1092073/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:12,249: DEBUG/MainProcess] Fetched and cached movie/1092073/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:12,302: INFO/MainProcess] Imported new movie: The Haunting at Saint Joseph's (TMDB ID: 1092073)
+[2025-05-27 00:05:12,309: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:12,479: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/822119?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:12,484: DEBUG/MainProcess] Fetched and cached movie/822119 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:12,491: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:12,670: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/822119/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:12,680: DEBUG/MainProcess] Fetched and cached movie/822119/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:12,687: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:12,692: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000000509 secs.
+[2025-05-27 00:05:12,870: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/822119/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:12,875: DEBUG/MainProcess] Fetched and cached movie/822119/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:12,889: INFO/MainProcess] Imported new movie: Капітан Америка: Чудесний новий світ (TMDB ID: 822119)
+[2025-05-27 00:05:12,896: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:13,068: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/710258?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:13,073: DEBUG/MainProcess] Fetched and cached movie/710258 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:13,080: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:13,249: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/710258/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:13,299: DEBUG/MainProcess] Fetched and cached movie/710258/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:13,306: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:13,462: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/710258/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:13,468: DEBUG/MainProcess] Fetched and cached movie/710258/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:13,482: INFO/MainProcess] Imported new movie: Раст (TMDB ID: 710258)
+[2025-05-27 00:05:13,489: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:13,647: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/11544?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:13,653: DEBUG/MainProcess] Fetched and cached movie/11544 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:13,660: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:13,662: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:13,940: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/11544/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:13,989: DEBUG/MainProcess] Fetched and cached movie/11544/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:13,994: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:14,154: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/11544/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:14,158: DEBUG/MainProcess] Fetched and cached movie/11544/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:14,171: INFO/MainProcess] Imported new movie: Ліло та Стіч (TMDB ID: 11544)
+[2025-05-27 00:05:14,176: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:14,330: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1359977?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:14,334: DEBUG/MainProcess] Fetched and cached movie/1359977 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:14,341: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:14,501: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1359977/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:14,505: DEBUG/MainProcess] Fetched and cached movie/1359977/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:14,510: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:14,664: DEBUG/MainProcess] Timer wake-up! Next ETA 0.03099999999994907 secs.
+[2025-05-27 00:05:14,675: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1359977/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:14,680: DEBUG/MainProcess] Fetched and cached movie/1359977/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:14,692: INFO/MainProcess] Imported new movie: Conjuring the Cult (TMDB ID: 1359977)
+[2025-05-27 00:05:14,699: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:14,702: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:14,858: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1403735?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:14,862: DEBUG/MainProcess] Fetched and cached movie/1403735 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:14,867: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:15,032: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1403735/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:15,036: DEBUG/MainProcess] Fetched and cached movie/1403735/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:15,042: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:15,203: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1403735/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:15,207: DEBUG/MainProcess] Fetched and cached movie/1403735/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:15,217: INFO/MainProcess] Imported new movie: లైలా (TMDB ID: 1403735)
+[2025-05-27 00:05:15,222: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:15,388: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1241982?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:15,392: DEBUG/MainProcess] Fetched and cached movie/1241982 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:15,397: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:15,681: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1241982/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:15,703: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:15,728: DEBUG/MainProcess] Fetched and cached movie/1241982/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:15,733: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:15,887: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1241982/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:15,890: DEBUG/MainProcess] Fetched and cached movie/1241982/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:15,899: INFO/MainProcess] Imported new movie: Ваяна 2 (TMDB ID: 1241982)
+[2025-05-27 00:05:15,903: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:16,061: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/668489?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:16,063: DEBUG/MainProcess] Fetched and cached movie/668489 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:16,067: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:16,242: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/668489/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:16,302: DEBUG/MainProcess] Fetched and cached movie/668489/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:16,308: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:16,464: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/668489/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:16,467: DEBUG/MainProcess] Fetched and cached movie/668489/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:16,477: INFO/MainProcess] Imported new movie: Спустошення (TMDB ID: 668489)
+[2025-05-27 00:05:16,482: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:16,644: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233413?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:16,648: DEBUG/MainProcess] Fetched and cached movie/1233413 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:16,653: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:16,707: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:16,814: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233413/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:16,869: DEBUG/MainProcess] Fetched and cached movie/1233413/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:16,875: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:17,040: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233413/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:17,046: DEBUG/MainProcess] Fetched and cached movie/1233413/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:17,060: INFO/MainProcess] Imported new movie: Грішники (TMDB ID: 1233413)
+[2025-05-27 00:05:17,065: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:17,257: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233620?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:17,260: DEBUG/MainProcess] Fetched and cached movie/1233620 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:17,266: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:17,448: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233620/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:17,452: DEBUG/MainProcess] Fetched and cached movie/1233620/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:17,458: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:17,619: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1233620/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:17,622: DEBUG/MainProcess] Fetched and cached movie/1233620/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:17,674: INFO/MainProcess] Imported new movie: ¡Qué Huevos, Sofía! (TMDB ID: 1233620)
+[2025-05-27 00:05:17,680: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:17,709: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9530000000000882 secs.
+[2025-05-27 00:05:17,841: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9532?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:17,845: DEBUG/MainProcess] Fetched and cached movie/9532 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:17,848: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:18,001: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9532/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:18,060: DEBUG/MainProcess] Fetched and cached movie/9532/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:18,068: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:18,229: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9532/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:18,234: DEBUG/MainProcess] Fetched and cached movie/9532/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:18,246: INFO/MainProcess] Imported new movie: Пункт призначення (TMDB ID: 9532)
+[2025-05-27 00:05:18,252: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:18,425: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1017129?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:18,430: DEBUG/MainProcess] Fetched and cached movie/1017129 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:18,437: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:18,611: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1017129/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:18,615: DEBUG/MainProcess] Fetched and cached movie/1017129/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:18,623: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:18,663: DEBUG/MainProcess] Timer wake-up! Next ETA 0.04699999999991178 secs.
+[2025-05-27 00:05:18,717: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:18,782: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1017129/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:18,788: DEBUG/MainProcess] Fetched and cached movie/1017129/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:18,801: INFO/MainProcess] Imported new movie: Чинк - хвостатый детектив (TMDB ID: 1017129)
+[2025-05-27 00:05:18,808: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:18,962: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/762509?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:18,966: DEBUG/MainProcess] Fetched and cached movie/762509 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:18,970: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:19,161: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/762509/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:19,208: DEBUG/MainProcess] Fetched and cached movie/762509/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:19,214: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:19,388: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/762509/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:19,392: DEBUG/MainProcess] Fetched and cached movie/762509/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:19,404: INFO/MainProcess] Imported new movie: Муфаса: Король Лев (TMDB ID: 762509)
+[2025-05-27 00:05:19,410: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:19,560: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/939243?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:19,564: DEBUG/MainProcess] Fetched and cached movie/939243 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:19,569: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:19,718: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:19,724: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/939243/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:19,778: DEBUG/MainProcess] Fetched and cached movie/939243/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:19,782: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:19,943: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/939243/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:19,946: DEBUG/MainProcess] Fetched and cached movie/939243/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:19,956: INFO/MainProcess] Imported new movie: Їжак Сонік 3 (TMDB ID: 939243)
+[2025-05-27 00:05:19,961: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:20,125: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1011477?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:20,128: DEBUG/MainProcess] Fetched and cached movie/1011477 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:20,135: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:20,287: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1011477/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:20,291: DEBUG/MainProcess] Fetched and cached movie/1011477/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:20,295: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:20,471: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1011477/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:20,474: DEBUG/MainProcess] Fetched and cached movie/1011477/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:20,482: INFO/MainProcess] Imported new movie: Карате Кід: Легенди (TMDB ID: 1011477)
+[2025-05-27 00:05:20,486: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:20,672: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1180763?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:20,674: DEBUG/MainProcess] Fetched and cached movie/1180763 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:20,679: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:20,722: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:20,837: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1180763/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:20,840: DEBUG/MainProcess] Fetched and cached movie/1180763/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:20,844: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:21,012: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1180763/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:21,016: DEBUG/MainProcess] Fetched and cached movie/1180763/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:21,025: INFO/MainProcess] Imported new movie: From the Shadows (TMDB ID: 1180763)
+[2025-05-27 00:05:21,029: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:21,193: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/575264?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:21,196: DEBUG/MainProcess] Fetched and cached movie/575264 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:21,200: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:21,518: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/575264/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:21,568: DEBUG/MainProcess] Fetched and cached movie/575264/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:21,572: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:21,723: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:21,754: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/575264/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:21,759: DEBUG/MainProcess] Fetched and cached movie/575264/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:21,807: INFO/MainProcess] Imported new movie: Місія неможлива: Розплата (TMDB ID: 575264)
+[2025-05-27 00:05:21,813: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:21,967: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1040159?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:21,971: DEBUG/MainProcess] Fetched and cached movie/1040159 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:21,980: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:22,147: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1040159/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:22,151: DEBUG/MainProcess] Fetched and cached movie/1040159/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:22,158: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:22,442: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1040159/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:22,446: DEBUG/MainProcess] Fetched and cached movie/1040159/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:22,499: INFO/MainProcess] Imported new movie: My Massive Cock (TMDB ID: 1040159)
+[2025-05-27 00:05:22,505: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:22,659: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/55779?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:22,664: DEBUG/MainProcess] Fetched and cached movie/55779 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:22,671: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:22,728: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9379999999999882 secs.
+[2025-05-27 00:05:22,873: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/55779/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:22,939: DEBUG/MainProcess] Fetched and cached movie/55779/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:22,942: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:23,130: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/55779/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:23,134: DEBUG/MainProcess] Fetched and cached movie/55779/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:23,147: INFO/MainProcess] Imported new movie: Пункт призначення 5 (TMDB ID: 55779)
+[2025-05-27 00:05:23,152: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:23,333: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/popular?page=3&api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:23,397: DEBUG/MainProcess] Fetched and cached movie/popular with params {'page': 3, 'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:23,402: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:23,599: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1124620?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:23,601: DEBUG/MainProcess] Fetched and cached movie/1124620 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:23,605: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:23,668: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:23,790: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1124620/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:23,838: DEBUG/MainProcess] Fetched and cached movie/1124620/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:23,843: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:24,013: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1124620/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:24,018: DEBUG/MainProcess] Fetched and cached movie/1124620/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:24,071: INFO/MainProcess] Imported new movie: Мавпа (TMDB ID: 1124620)
+[2025-05-27 00:05:24,079: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:24,251: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/914?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:24,255: DEBUG/MainProcess] Fetched and cached movie/914 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:24,262: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:24,439: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/914/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:24,488: DEBUG/MainProcess] Fetched and cached movie/914/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:24,494: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:24,669: DEBUG/MainProcess] Timer wake-up! Next ETA 0.06200000000001182 secs.
+[2025-05-27 00:05:24,670: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/914/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:24,673: DEBUG/MainProcess] Fetched and cached movie/914/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:24,725: INFO/MainProcess] Imported new movie: Великий диктатор (TMDB ID: 914)
+[2025-05-27 00:05:24,730: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:24,736: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:24,909: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1153714?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:24,914: DEBUG/MainProcess] Fetched and cached movie/1153714 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:24,921: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:25,080: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1153714/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:25,129: DEBUG/MainProcess] Fetched and cached movie/1153714/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:25,137: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:25,410: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1153714/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:25,414: DEBUG/MainProcess] Fetched and cached movie/1153714/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:25,464: INFO/MainProcess] Imported new movie: Смерть єдинорога (TMDB ID: 1153714)
+[2025-05-27 00:05:25,469: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:25,626: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1482554?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:25,630: DEBUG/MainProcess] Fetched and cached movie/1482554 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:25,635: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:25,737: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:25,920: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1482554/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:25,924: DEBUG/MainProcess] Fetched and cached movie/1482554/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:25,928: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:26,097: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1482554/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:26,102: DEBUG/MainProcess] Fetched and cached movie/1482554/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:26,157: INFO/MainProcess] Imported new movie: Soul to Squeeze (TMDB ID: 1482554)
+[2025-05-27 00:05:26,165: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:26,325: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/20760?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:26,330: DEBUG/MainProcess] Fetched and cached movie/20760 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:26,337: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:26,576: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/20760/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:26,628: DEBUG/MainProcess] Fetched and cached movie/20760/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:26,637: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:26,742: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:26,819: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/20760/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:26,825: DEBUG/MainProcess] Fetched and cached movie/20760/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:26,879: INFO/MainProcess] Imported new movie: Ліло та Стіч 2: Велика проблема Стіча (TMDB ID: 20760)
+[2025-05-27 00:05:26,885: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:27,043: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1276073?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:27,048: DEBUG/MainProcess] Fetched and cached movie/1276073 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:27,054: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:27,217: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1276073/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:27,278: DEBUG/MainProcess] Fetched and cached movie/1276073/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:27,285: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:27,439: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1276073/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:27,444: DEBUG/MainProcess] Fetched and cached movie/1276073/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:27,498: INFO/MainProcess] Imported new movie: Бомба у швидкісному потягу (TMDB ID: 1276073)
+[2025-05-27 00:05:27,505: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:27,701: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1356236?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:27,705: DEBUG/MainProcess] Fetched and cached movie/1356236 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:27,709: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:27,745: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9220000000000255 secs.
+[2025-05-27 00:05:27,861: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1356236/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:27,865: DEBUG/MainProcess] Fetched and cached movie/1356236/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:27,869: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:28,020: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1356236/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:28,024: DEBUG/MainProcess] Fetched and cached movie/1356236/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:28,071: INFO/MainProcess] Imported new movie: Свята Катерина (TMDB ID: 1356236)
+[2025-05-27 00:05:28,074: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:28,252: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1448938?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:28,255: DEBUG/MainProcess] Fetched and cached movie/1448938 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:28,259: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:28,414: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1448938/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:28,418: DEBUG/MainProcess] Fetched and cached movie/1448938/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:28,432: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:28,596: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1448938/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:28,599: DEBUG/MainProcess] Fetched and cached movie/1448938/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:28,643: INFO/MainProcess] Imported new movie: Abduct (TMDB ID: 1448938)
+[2025-05-27 00:05:28,647: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:28,668: DEBUG/MainProcess] Timer wake-up! Next ETA 0.07799999999997453 secs.
+[2025-05-27 00:05:28,750: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:28,820: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1471014?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:28,824: DEBUG/MainProcess] Fetched and cached movie/1471014 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:28,828: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:29,011: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1471014/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:29,017: DEBUG/MainProcess] Fetched and cached movie/1471014/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:29,023: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:29,192: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1471014/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:29,198: DEBUG/MainProcess] Fetched and cached movie/1471014/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:29,210: INFO/MainProcess] Imported new movie: Van Gogh by Vincent (TMDB ID: 1471014)
+[2025-05-27 00:05:29,216: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:29,506: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1195506?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:29,511: DEBUG/MainProcess] Fetched and cached movie/1195506 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:29,517: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:29,686: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1195506/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:29,751: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:29,759: DEBUG/MainProcess] Fetched and cached movie/1195506/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:29,766: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:29,938: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1195506/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:29,942: DEBUG/MainProcess] Fetched and cached movie/1195506/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:29,992: INFO/MainProcess] Imported new movie: Новокаїн (TMDB ID: 1195506)
+[2025-05-27 00:05:29,997: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:30,148: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1180906?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:30,152: DEBUG/MainProcess] Fetched and cached movie/1180906 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:30,157: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:30,346: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1180906/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:30,398: DEBUG/MainProcess] Fetched and cached movie/1180906/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:30,405: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:30,588: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1180906/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:30,593: DEBUG/MainProcess] Fetched and cached movie/1180906/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:30,644: INFO/MainProcess] Imported new movie: Світанок пустелі (TMDB ID: 1180906)
+[2025-05-27 00:05:30,650: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:30,756: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:30,819: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/950396?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:30,823: DEBUG/MainProcess] Fetched and cached movie/950396 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:30,826: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:31,012: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/950396/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:31,058: DEBUG/MainProcess] Fetched and cached movie/950396/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:31,064: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:31,234: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/950396/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:31,239: DEBUG/MainProcess] Fetched and cached movie/950396/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:31,278: INFO/MainProcess] Imported new movie: Ущелина (TMDB ID: 950396)
+[2025-05-27 00:05:31,284: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:31,451: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/7451?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:31,455: DEBUG/MainProcess] Fetched and cached movie/7451 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:31,461: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:31,632: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/7451/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:31,641: DEBUG/MainProcess] Fetched and cached movie/7451/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:31,647: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:31,758: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:31,798: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/7451/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:31,802: DEBUG/MainProcess] Fetched and cached movie/7451/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:31,813: INFO/MainProcess] Imported new movie: Три ікси (TMDB ID: 7451)
+[2025-05-27 00:05:31,818: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:31,971: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1010581?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:31,977: DEBUG/MainProcess] Fetched and cached movie/1010581 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:31,984: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:32,154: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1010581/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:32,208: DEBUG/MainProcess] Fetched and cached movie/1010581/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:32,216: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:32,475: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1010581/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:32,480: DEBUG/MainProcess] Fetched and cached movie/1010581/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:32,494: INFO/MainProcess] Imported new movie: Моя провина (TMDB ID: 1010581)
+[2025-05-27 00:05:32,500: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:32,679: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1045938?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:32,685: DEBUG/MainProcess] Fetched and cached movie/1045938 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:32,693: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:32,764: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8910000000000764 secs.
+[2025-05-27 00:05:32,875: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1045938/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:32,932: DEBUG/MainProcess] Fetched and cached movie/1045938/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:32,940: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:33,112: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1045938/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:33,117: DEBUG/MainProcess] Fetched and cached movie/1045938/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:33,129: INFO/MainProcess] Imported new movie: Велика двадцятка (TMDB ID: 1045938)
+[2025-05-27 00:05:33,135: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:33,317: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1126166?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:33,321: DEBUG/MainProcess] Fetched and cached movie/1126166 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:33,327: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:33,488: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1126166/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:33,538: DEBUG/MainProcess] Fetched and cached movie/1126166/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:33,544: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:33,657: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:33,694: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1126166/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:33,698: DEBUG/MainProcess] Fetched and cached movie/1126166/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:33,750: INFO/MainProcess] Imported new movie: Небезпечний рейс (TMDB ID: 1126166)
+[2025-05-27 00:05:33,757: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:33,924: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9358?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:33,930: DEBUG/MainProcess] Fetched and cached movie/9358 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:33,939: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:34,115: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9358/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:34,122: DEBUG/MainProcess] Fetched and cached movie/9358/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:34,127: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:34,303: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9358/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:34,307: DEBUG/MainProcess] Fetched and cached movie/9358/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:34,358: INFO/MainProcess] Imported new movie: Пункт призначення 2 (TMDB ID: 9358)
+[2025-05-27 00:05:34,362: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:34,555: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1260820?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:34,561: DEBUG/MainProcess] Fetched and cached movie/1260820 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:34,568: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:34,658: DEBUG/MainProcess] Timer wake-up! Next ETA 0.1089999999999236 secs.
+[2025-05-27 00:05:34,720: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1260820/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:34,727: DEBUG/MainProcess] Fetched and cached movie/1260820/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:34,734: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:34,774: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:34,890: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1260820/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:34,897: DEBUG/MainProcess] Fetched and cached movie/1260820/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:34,926: INFO/MainProcess] Imported new movie: Stream (TMDB ID: 1260820)
+[2025-05-27 00:05:34,935: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:35,097: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/715287?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:35,103: DEBUG/MainProcess] Fetched and cached movie/715287 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:35,111: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:35,294: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/715287/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:35,298: DEBUG/MainProcess] Fetched and cached movie/715287/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:35,304: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:35,464: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/715287/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:35,470: DEBUG/MainProcess] Fetched and cached movie/715287/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:35,522: INFO/MainProcess] Imported new movie: 새엄마의 욕망 (TMDB ID: 715287)
+[2025-05-27 00:05:35,528: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:35,700: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1252309?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:35,704: DEBUG/MainProcess] Fetched and cached movie/1252309 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:35,709: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:35,775: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:35,957: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1252309/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:35,962: DEBUG/MainProcess] Fetched and cached movie/1252309/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:35,966: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:36,145: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1252309/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:36,150: DEBUG/MainProcess] Fetched and cached movie/1252309/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:36,204: INFO/MainProcess] Imported new movie: Проси у мене все, що захочеш (TMDB ID: 1252309)
+[2025-05-27 00:05:36,210: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:36,395: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/popular?page=4&api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:36,449: DEBUG/MainProcess] Fetched and cached movie/popular with params {'page': 4, 'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:36,459: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:36,620: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1184918?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:36,625: DEBUG/MainProcess] Fetched and cached movie/1184918 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:36,632: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:36,782: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:36,877: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1184918/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:36,928: DEBUG/MainProcess] Fetched and cached movie/1184918/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:36,935: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:37,095: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1184918/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:37,102: DEBUG/MainProcess] Fetched and cached movie/1184918/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,157: INFO/MainProcess] Imported new movie: Дикий робот (TMDB ID: 1184918)
+[2025-05-27 00:05:37,162: DEBUG/MainProcess] Cache hit for movie/1252309 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,167: DEBUG/MainProcess] Cache hit for movie/1252309/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,172: DEBUG/MainProcess] Cache hit for movie/1252309/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,177: INFO/MainProcess] Updated existing movie: Проси у мене все, що захочеш (TMDB ID: 1252309)
+[2025-05-27 00:05:37,181: DEBUG/MainProcess] Cache hit for movie/1260820 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,186: DEBUG/MainProcess] Cache hit for movie/1260820/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,189: DEBUG/MainProcess] Cache hit for movie/1260820/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,193: INFO/MainProcess] Updated existing movie: Stream (TMDB ID: 1260820)
+[2025-05-27 00:05:37,200: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:37,358: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/954?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:37,364: DEBUG/MainProcess] Fetched and cached movie/954 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,371: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:37,527: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/954/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:37,534: DEBUG/MainProcess] Fetched and cached movie/954/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,540: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:37,714: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/954/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:37,717: DEBUG/MainProcess] Fetched and cached movie/954/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,769: INFO/MainProcess] Imported new movie: Місія: Неможлива (TMDB ID: 954)
+[2025-05-27 00:05:37,775: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:37,784: DEBUG/MainProcess] Timer wake-up! Next ETA 0.875 secs.
+[2025-05-27 00:05:37,960: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9286?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:37,964: DEBUG/MainProcess] Fetched and cached movie/9286 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:37,969: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:38,154: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9286/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:38,208: DEBUG/MainProcess] Fetched and cached movie/9286/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:38,214: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:38,372: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/9286/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:38,378: DEBUG/MainProcess] Fetched and cached movie/9286/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:38,433: INFO/MainProcess] Imported new movie: Пункт призначення 3 (TMDB ID: 9286)
+[2025-05-27 00:05:38,440: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:38,610: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/912649?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:38,614: DEBUG/MainProcess] Fetched and cached movie/912649 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:38,619: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:38,660: DEBUG/MainProcess] Timer wake-up! Next ETA 0.125 secs.
+[2025-05-27 00:05:38,792: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:38,807: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/912649/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:38,869: DEBUG/MainProcess] Fetched and cached movie/912649/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:38,886: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:39,123: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/912649/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:39,129: DEBUG/MainProcess] Fetched and cached movie/912649/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:39,145: INFO/MainProcess] Imported new movie: Веном: Останній танець (TMDB ID: 912649)
+[2025-05-27 00:05:39,152: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:39,332: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1092899?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:39,340: DEBUG/MainProcess] Fetched and cached movie/1092899 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:39,352: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:39,526: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1092899/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:39,530: DEBUG/MainProcess] Fetched and cached movie/1092899/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:39,536: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:39,723: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1092899/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:39,728: DEBUG/MainProcess] Fetched and cached movie/1092899/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:39,777: INFO/MainProcess] Imported new movie: The Siege (TMDB ID: 1092899)
+[2025-05-27 00:05:39,784: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:39,795: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9840000000000373 secs.
+[2025-05-27 00:05:39,962: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/533535?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:39,967: DEBUG/MainProcess] Fetched and cached movie/533535 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:39,976: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:40,184: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/533535/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:40,288: DEBUG/MainProcess] Fetched and cached movie/533535/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:40,296: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:40,454: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/533535/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:40,459: DEBUG/MainProcess] Fetched and cached movie/533535/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:40,513: INFO/MainProcess] Imported new movie: Дедпул і Росомаха (TMDB ID: 533535)
+[2025-05-27 00:05:40,520: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:40,702: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/811941?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:40,707: DEBUG/MainProcess] Fetched and cached movie/811941 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:40,716: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:40,784: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:40,899: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/811941/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:40,947: DEBUG/MainProcess] Fetched and cached movie/811941/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:40,953: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:41,130: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/811941/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:41,134: DEBUG/MainProcess] Fetched and cached movie/811941/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:41,187: INFO/MainProcess] Imported new movie: Девара: Частина 1 (TMDB ID: 811941)
+[2025-05-27 00:05:41,195: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:41,362: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1284120?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:41,368: DEBUG/MainProcess] Fetched and cached movie/1284120 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:41,376: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:41,557: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1284120/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:41,609: DEBUG/MainProcess] Fetched and cached movie/1284120/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:41,695: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:41,786: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:41,895: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1284120/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:41,900: DEBUG/MainProcess] Fetched and cached movie/1284120/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:41,951: INFO/MainProcess] Imported new movie: Гидка сестра (TMDB ID: 1284120)
+[2025-05-27 00:05:41,958: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:42,205: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/19912?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:42,210: DEBUG/MainProcess] Fetched and cached movie/19912 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:42,217: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:42,391: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/19912/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:42,448: DEBUG/MainProcess] Fetched and cached movie/19912/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:42,455: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:42,623: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/19912/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:42,629: DEBUG/MainProcess] Fetched and cached movie/19912/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:42,682: INFO/MainProcess] Imported new movie: Пункт призначення 4 (TMDB ID: 19912)
+[2025-05-27 00:05:42,688: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:42,792: DEBUG/MainProcess] Timer wake-up! Next ETA 0.875 secs.
+[2025-05-27 00:05:42,845: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/778578?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:42,850: DEBUG/MainProcess] Fetched and cached movie/778578 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:42,857: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:43,013: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/778578/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:43,018: DEBUG/MainProcess] Fetched and cached movie/778578/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:43,026: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:43,195: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/778578/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:43,199: DEBUG/MainProcess] Fetched and cached movie/778578/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:43,250: INFO/MainProcess] Imported new movie: Cry of Silence (TMDB ID: 778578)
+[2025-05-27 00:05:43,254: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:43,408: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/696506?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:43,413: DEBUG/MainProcess] Fetched and cached movie/696506 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:43,420: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:43,606: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/696506/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:43,657: DEBUG/MainProcess] Fetched and cached movie/696506/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:43,665: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:43,668: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:43,843: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/696506/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:43,849: DEBUG/MainProcess] Fetched and cached movie/696506/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:43,903: INFO/MainProcess] Imported new movie: Мікі 17 (TMDB ID: 696506)
+[2025-05-27 00:05:43,912: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:44,078: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/959604?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:44,083: DEBUG/MainProcess] Fetched and cached movie/959604 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:44,091: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:44,271: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/959604/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:44,328: DEBUG/MainProcess] Fetched and cached movie/959604/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:44,336: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:44,518: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/959604/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:44,523: DEBUG/MainProcess] Fetched and cached movie/959604/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:44,537: INFO/MainProcess] Imported new movie: Шалено закохані (TMDB ID: 959604)
+[2025-05-27 00:05:44,544: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:44,670: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10900000000003729 secs.
+[2025-05-27 00:05:44,720: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/846433?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:44,724: DEBUG/MainProcess] Fetched and cached movie/846433 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:44,730: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:44,820: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:44,881: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/846433/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:44,937: DEBUG/MainProcess] Fetched and cached movie/846433/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:44,943: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:45,099: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/846433/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:45,103: DEBUG/MainProcess] Fetched and cached movie/846433/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:45,152: INFO/MainProcess] Imported new movie: Покаяння (TMDB ID: 846433)
+[2025-05-27 00:05:45,156: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:45,341: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/519182?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:45,345: DEBUG/MainProcess] Fetched and cached movie/519182 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:45,351: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:45,584: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/519182/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:45,637: DEBUG/MainProcess] Fetched and cached movie/519182/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:45,643: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:45,821: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:45,826: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/519182/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:45,831: DEBUG/MainProcess] Fetched and cached movie/519182/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:45,887: INFO/MainProcess] Imported new movie: Нікчемний Я 4 (TMDB ID: 519182)
+[2025-05-27 00:05:45,894: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:46,050: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1011985?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:46,055: DEBUG/MainProcess] Fetched and cached movie/1011985 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:46,062: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:46,246: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1011985/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:46,308: DEBUG/MainProcess] Fetched and cached movie/1011985/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:46,317: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:46,475: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1011985/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:46,481: DEBUG/MainProcess] Fetched and cached movie/1011985/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:46,497: INFO/MainProcess] Imported new movie: Панда Кунг-Фу 4 (TMDB ID: 1011985)
+[2025-05-27 00:05:46,504: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:46,661: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/933260?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:46,667: DEBUG/MainProcess] Fetched and cached movie/933260 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:46,674: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:46,827: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:46,831: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/933260/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:46,887: DEBUG/MainProcess] Fetched and cached movie/933260/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:46,895: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:47,070: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/933260/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:47,075: DEBUG/MainProcess] Fetched and cached movie/933260/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:47,133: INFO/MainProcess] Imported new movie: Субстанція (TMDB ID: 933260)
+[2025-05-27 00:05:47,141: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:47,312: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/870028?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:47,317: DEBUG/MainProcess] Fetched and cached movie/870028 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:47,325: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:47,486: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/870028/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:47,538: DEBUG/MainProcess] Fetched and cached movie/870028/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:47,547: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:47,713: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/870028/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:47,716: DEBUG/MainProcess] Fetched and cached movie/870028/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:47,727: INFO/MainProcess] Imported new movie: Аудитор 2 (TMDB ID: 870028)
+[2025-05-27 00:05:47,733: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:47,828: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8280000000000882 secs.
+[2025-05-27 00:05:47,888: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1022789?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:47,893: DEBUG/MainProcess] Fetched and cached movie/1022789 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:47,898: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:48,066: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1022789/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:48,116: DEBUG/MainProcess] Fetched and cached movie/1022789/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:48,120: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:48,289: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1022789/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:48,293: DEBUG/MainProcess] Fetched and cached movie/1022789/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:48,340: INFO/MainProcess] Imported new movie: Думками навиворіт 2 (TMDB ID: 1022789)
+[2025-05-27 00:05:48,344: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:48,519: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/popular?page=5&api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:48,567: DEBUG/MainProcess] Fetched and cached movie/popular with params {'page': 5, 'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:48,574: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:48,657: DEBUG/MainProcess] Timer wake-up! Next ETA 0.17199999999991178 secs.
+[2025-05-27 00:05:48,759: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/558449?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:48,764: DEBUG/MainProcess] Fetched and cached movie/558449 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:48,771: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:48,834: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:48,938: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/558449/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:48,997: DEBUG/MainProcess] Fetched and cached movie/558449/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:49,005: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:49,156: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/558449/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:49,160: DEBUG/MainProcess] Fetched and cached movie/558449/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:49,173: INFO/MainProcess] Imported new movie: Гладіатор II (TMDB ID: 558449)
+[2025-05-27 00:05:49,179: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:49,474: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/823219?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:49,482: DEBUG/MainProcess] Fetched and cached movie/823219 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:49,493: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:49,647: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/823219/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:49,696: DEBUG/MainProcess] Fetched and cached movie/823219/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:49,702: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:49,836: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:49,856: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/823219/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:49,863: DEBUG/MainProcess] Fetched and cached movie/823219/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:49,879: INFO/MainProcess] Imported new movie: Потік. Останній кіт на Землі (TMDB ID: 823219)
+[2025-05-27 00:05:49,885: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:50,049: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/539972?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:50,053: DEBUG/MainProcess] Fetched and cached movie/539972 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:50,057: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:50,229: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/539972/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:50,277: DEBUG/MainProcess] Fetched and cached movie/539972/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:50,281: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:50,443: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/539972/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:50,449: DEBUG/MainProcess] Fetched and cached movie/539972/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:50,501: INFO/MainProcess] Imported new movie: Крейвен-мисливець (TMDB ID: 539972)
+[2025-05-27 00:05:50,506: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:50,683: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1313194?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:50,688: DEBUG/MainProcess] Fetched and cached movie/1313194 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:50,695: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:50,845: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:50,861: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1313194/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:50,907: DEBUG/MainProcess] Fetched and cached movie/1313194/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:50,916: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:51,095: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1313194/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:51,100: DEBUG/MainProcess] Fetched and cached movie/1313194/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:51,151: INFO/MainProcess] Imported new movie: Літо 69 (TMDB ID: 1313194)
+[2025-05-27 00:05:51,159: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:51,319: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1323784?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:51,323: DEBUG/MainProcess] Fetched and cached movie/1323784 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:51,328: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:51,484: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1323784/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:51,489: DEBUG/MainProcess] Fetched and cached movie/1323784/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:51,494: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:51,727: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1323784/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:51,732: DEBUG/MainProcess] Fetched and cached movie/1323784/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:51,747: INFO/MainProcess] Imported new movie: Поганий вплив (TMDB ID: 1323784)
+[2025-05-27 00:05:51,754: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:51,847: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:51,921: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/24428?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:51,926: DEBUG/MainProcess] Fetched and cached movie/24428 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:51,934: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:52,117: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/24428/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:52,129: DEBUG/MainProcess] Fetched and cached movie/24428/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:52,134: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:52,285: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/24428/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:52,291: DEBUG/MainProcess] Fetched and cached movie/24428/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:52,318: INFO/MainProcess] Imported new movie: Месники (TMDB ID: 24428)
+[2025-05-27 00:05:52,326: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:52,490: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/21316?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:52,496: DEBUG/MainProcess] Fetched and cached movie/21316 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:52,503: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:52,668: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/21316/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:52,717: DEBUG/MainProcess] Fetched and cached movie/21316/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:52,724: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:52,853: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8129999999999882 secs.
+[2025-05-27 00:05:52,879: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/21316/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:52,891: DEBUG/MainProcess] Fetched and cached movie/21316/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:52,905: INFO/MainProcess] Imported new movie: Leroy & Stitch (TMDB ID: 21316)
+[2025-05-27 00:05:52,911: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:53,072: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/842328?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:53,078: DEBUG/MainProcess] Fetched and cached movie/842328 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:53,086: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:53,260: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/842328/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:53,307: DEBUG/MainProcess] Fetched and cached movie/842328/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:53,315: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:53,479: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/842328/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:53,485: DEBUG/MainProcess] Fetched and cached movie/842328/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:53,540: INFO/MainProcess] Imported new movie: Шкода, що тебе тут немає (TMDB ID: 842328)
+[2025-05-27 00:05:53,547: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:53,700: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:53,776: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1078600?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:53,781: DEBUG/MainProcess] Fetched and cached movie/1078600 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:53,787: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:53,955: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1078600/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:54,007: DEBUG/MainProcess] Fetched and cached movie/1078600/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:54,015: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:54,175: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1078600/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:54,179: DEBUG/MainProcess] Fetched and cached movie/1078600/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:54,194: INFO/MainProcess] Imported new movie: Тату на серці (TMDB ID: 1078600)
+[2025-05-27 00:05:54,202: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:54,360: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/927342?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:54,367: DEBUG/MainProcess] Fetched and cached movie/927342 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:54,374: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:54,535: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/927342/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:54,587: DEBUG/MainProcess] Fetched and cached movie/927342/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:54,592: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:54,701: DEBUG/MainProcess] Timer wake-up! Next ETA 0.14000000000010004 secs.
+[2025-05-27 00:05:54,755: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/927342/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:54,762: DEBUG/MainProcess] Fetched and cached movie/927342/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:54,816: INFO/MainProcess] Imported new movie: Амаран (TMDB ID: 927342)
+[2025-05-27 00:05:54,821: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:54,847: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:54,976: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1156593?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:54,980: DEBUG/MainProcess] Fetched and cached movie/1156593 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:54,985: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:55,181: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1156593/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:55,187: DEBUG/MainProcess] Fetched and cached movie/1156593/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:55,196: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:55,371: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1156593/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:55,377: DEBUG/MainProcess] Fetched and cached movie/1156593/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:55,432: INFO/MainProcess] Imported new movie: Твоя провина (TMDB ID: 1156593)
+[2025-05-27 00:05:55,439: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:55,722: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1244944?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:55,728: DEBUG/MainProcess] Fetched and cached movie/1244944 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:55,737: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:55,848: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:55,897: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1244944/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:55,946: DEBUG/MainProcess] Fetched and cached movie/1244944/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:55,952: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:56,115: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1244944/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:56,119: DEBUG/MainProcess] Fetched and cached movie/1244944/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:56,132: INFO/MainProcess] Imported new movie: Жінка у дворі (TMDB ID: 1244944)
+[2025-05-27 00:05:56,139: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:56,311: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/974573?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:56,315: DEBUG/MainProcess] Fetched and cached movie/974573 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:56,320: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:56,494: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/974573/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:56,547: DEBUG/MainProcess] Fetched and cached movie/974573/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:56,553: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:56,712: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/974573/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:56,716: DEBUG/MainProcess] Fetched and cached movie/974573/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:56,764: INFO/MainProcess] Imported new movie: Ще одна проста послуга (TMDB ID: 974573)
+[2025-05-27 00:05:56,769: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:56,854: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:56,925: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1390394?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:56,930: DEBUG/MainProcess] Fetched and cached movie/1390394 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:56,946: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:57,109: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1390394/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:57,162: DEBUG/MainProcess] Fetched and cached movie/1390394/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:57,167: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:57,320: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1390394/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:57,324: DEBUG/MainProcess] Fetched and cached movie/1390394/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:57,374: INFO/MainProcess] Imported new movie: Віні-молодший (TMDB ID: 1390394)
+[2025-05-27 00:05:57,378: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:57,535: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1251621?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:57,539: DEBUG/MainProcess] Fetched and cached movie/1251621 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:57,543: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:57,701: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1251621/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:57,766: DEBUG/MainProcess] Fetched and cached movie/1251621/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:57,771: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:57,856: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8439999999999372 secs.
+[2025-05-27 00:05:57,969: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1251621/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:57,973: DEBUG/MainProcess] Fetched and cached movie/1251621/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:58,024: INFO/MainProcess] Imported new movie: Vlny (TMDB ID: 1251621)
+[2025-05-27 00:05:58,029: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:58,185: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1293286?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:58,189: DEBUG/MainProcess] Fetched and cached movie/1293286 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:58,194: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:58,366: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1293286/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:58,416: DEBUG/MainProcess] Fetched and cached movie/1293286/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:58,422: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:58,603: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1293286/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:58,608: DEBUG/MainProcess] Fetched and cached movie/1293286/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:58,664: INFO/MainProcess] Imported new movie: Стрільці (TMDB ID: 1293286)
+[2025-05-27 00:05:58,671: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:58,701: DEBUG/MainProcess] Timer wake-up! Next ETA 0.14000000000010004 secs.
+[2025-05-27 00:05:58,846: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:58,853: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1249213?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:58,857: DEBUG/MainProcess] Fetched and cached movie/1249213 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:58,862: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:59,038: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1249213/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:59,086: DEBUG/MainProcess] Fetched and cached movie/1249213/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:59,094: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:59,275: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1249213/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:59,280: DEBUG/MainProcess] Fetched and cached movie/1249213/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:59,292: INFO/MainProcess] Imported new movie: Фатальний меседж (TMDB ID: 1249213)
+[2025-05-27 00:05:59,297: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:59,452: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/259872?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:59,457: DEBUG/MainProcess] Fetched and cached movie/259872 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:59,464: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:59,619: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/259872/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:59,624: DEBUG/MainProcess] Fetched and cached movie/259872/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:59,631: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:59,798: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/259872/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:59,802: DEBUG/MainProcess] Fetched and cached movie/259872/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:59,815: INFO/MainProcess] Imported new movie: Des jours plus belles que la nuit (TMDB ID: 259872)
+[2025-05-27 00:05:59,821: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:05:59,847: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:05:59,980: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1234821?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:05:59,984: DEBUG/MainProcess] Fetched and cached movie/1234821 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:05:59,989: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:06:00,145: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1234821/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:06:00,195: DEBUG/MainProcess] Fetched and cached movie/1234821/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:06:00,201: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:06:00,376: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1234821/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:06:00,380: DEBUG/MainProcess] Fetched and cached movie/1234821/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:06:00,392: INFO/MainProcess] Imported new movie: Світ Юрського періоду: Відродження (TMDB ID: 1234821)
+[2025-05-27 00:06:00,398: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:06:00,600: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1064486?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:06:00,604: DEBUG/MainProcess] Fetched and cached movie/1064486 with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:06:00,613: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:06:00,802: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1064486/credits?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:06:00,852: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2025-05-27 00:06:00,856: DEBUG/MainProcess] Fetched and cached movie/1064486/credits with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:06:00,861: DEBUG/MainProcess] Starting new HTTPS connection (1): api.themoviedb.org:443
+[2025-05-27 00:06:01,015: DEBUG/MainProcess] https://api.themoviedb.org:443 "GET /3/movie/1064486/keywords?api_key=e2ac7871def216c4cc16677cedbcf573&language=uk-UA HTTP/1.1" 200 None
+[2025-05-27 00:06:01,018: DEBUG/MainProcess] Fetched and cached movie/1064486/keywords with params {'api_key': 'e2ac7871def216c4cc16677cedbcf573', 'language': 'uk-UA'}
+[2025-05-27 00:06:01,069: INFO/MainProcess] Imported new movie: Мемуари Равлика (TMDB ID: 1064486)
+[2025-05-27 00:06:01,070: INFO/MainProcess] Finished importing popular movies. Total imported/updated: 100
+[2025-05-27 00:06:01,077: INFO/MainProcess] Task recommender.tasks.import_popular_movies_task[3480ef88-817b-4335-8219-0fe54416c150] succeeded in 62.3599999999999s: 'Imported/updated 100 popular movies.'
+[2025-05-27 00:06:01,091: DEBUG/MainProcess] | Worker: Closing Pool...
+[2025-05-27 00:06:01,091: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2025-05-27 00:06:01,092: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2025-05-27 00:06:01,092: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2025-05-27 00:06:01,092: DEBUG/MainProcess] | Consumer: Closing Events...
+[2025-05-27 00:06:01,093: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2025-05-27 00:06:01,093: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2025-05-27 00:06:01,093: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2025-05-27 00:06:01,094: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2025-05-27 00:06:01,094: DEBUG/MainProcess] | Consumer: Closing Control...
+[2025-05-27 00:06:01,094: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2025-05-27 00:06:01,094: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2025-05-27 00:06:01,095: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2025-05-27 00:06:01,111: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2025-05-27 00:06:01,112: DEBUG/MainProcess] Canceling task consumer...
+[2025-05-27 00:06:01,112: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2025-05-27 00:06:01,120: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2025-05-27 00:06:01,143: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2025-05-27 00:06:01,144: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2025-05-27 00:06:01,148: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2025-05-27 00:06:01,149: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2025-05-27 00:06:01,855: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2025-05-27 00:06:01,856: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2025-05-27 00:06:01,857: DEBUG/MainProcess] Canceling task consumer...
+[2025-05-27 00:06:01,857: DEBUG/MainProcess] Closing consumer channel...
+[2025-05-27 00:06:01,858: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2025-05-27 00:06:01,859: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2025-05-27 00:06:01,859: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2025-05-27 00:06:01,860: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2025-05-27 00:06:01,864: WARNING/MainProcess] Requeuing undeliverable message for queue 'celery': No consumers.

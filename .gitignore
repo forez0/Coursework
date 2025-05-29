@@ -1,0 +1,6 @@
+# .gitignore
+venv/
+*.sqlite3
+__pycache__/
+.env
+ml_models/

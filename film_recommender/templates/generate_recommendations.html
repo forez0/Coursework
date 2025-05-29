@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Генерація рекомендацій{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Згенерувати персональні рекомендації</h3>
+                </div>
+                <div class="card-body">
+                    <p>Натисніть кнопку нижче, щоб розпочати процес генерації персональних рекомендацій для вас. Цей процес може зайняти деякий час.</p>
+                    <form method="post" action="{% url 'generate_recommendations_page' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-success btn-lg mt-3">Згенерувати рекомендації</button>
+                    </form>
+                    <p class="mt-4">Після завершення генерації, ви будете автоматично перенаправлені на сторінку з вашими рекомендаціями.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
