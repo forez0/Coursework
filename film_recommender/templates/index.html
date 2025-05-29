@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+
+{% block title %}Головна{% endblock %}
+
+{% block hero %}
+<div class="hero-section">
+    <div class="container">
+        <h1 class="hero-title">Знайдіть свій ідеальний фільм</h1>
+        <p class="hero-subtitle">Персоналізовані рекомендації на основі ваших вподобань</p>
+
+        <div class="col-lg-6 mx-auto">
+            <form method="GET" action="{% url 'index' %}" class="d-flex shadow-lg rounded-pill overflow-hidden">
+                <input class="form-control border-0 ps-4"
+                       type="search"
+                       placeholder="Пошук фільмів..."
+                       aria-label="Search"
+                       name="query"
+                       value="{{ query|default:'' }}">
+                <button class="btn btn-primary px-4" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    {% if search_results %}
+        <div class="section-header mb-4">
+            <h2 class="section-title">Результати пошуку для "{{ query }}"</h2>
+            <p class="text-muted">{{ search_results|length }} знайдено</p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+            {% for movie in search_results %}
+                {% include 'movies/movie_card.html' with movie=movie %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if not query or not search_results %}
+        {% if user.is_authenticated %}
+            <div class="section-header mb-4">
+                <h2 class="section-title"><i class="bi bi-stars text-primary me-2"></i>Ваші рекомендації</h2>
+                {% if user_recommendations %}
+                    <p class="text-muted">Спеціально підібрані для вас</p>
+                {% endif %}
+            </div>
+
+            {% if user_recommendations %}
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                    {% for recommendation in user_recommendations %}
+                        {% include 'movies/movie_card.html' with movie=recommendation.movie score=recommendation.score %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state text-center py-5">
+                    <i class="bi bi-robot display-4 text-muted"></i>
+                    <h3 class="mt-3">Наразі немає рекомендацій</h3>
+                    <p class="text-muted">Оцініть кілька фільмів, щоб система могла згенерувати персоналізовані рекомендації</p>
+                    <form method="post" action="{% url 'generate_recommendations_page' %}" class="mt-4">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">
+                            <i class="bi bi-magic me-2"></i> Згенерувати рекомендації
+                        </button>
+                    </form>
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="cta-card card border-0 shadow-sm mb-5">
+                <div class="card-body text-center p-5">
+                    <i class="bi bi-person-check display-4 text-primary mb-3"></i>
+                    <h2>Персоналізовані рекомендації</h2>
+                    <p class="lead text-muted mb-4">Увійдіть або зареєструйтесь, щоб отримувати рекомендації на основі ваших вподобань</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="{% url 'login' %}" class="btn btn-primary btn-lg rounded-pill px-4">Увійти</a>
+                        <a href="{% url 'register' %}" class="btn btn-outline-primary btn-lg rounded-pill px-4">Реєстрація</a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="section-header mb-4 mt-5">
+            <h2 class="section-title"><i class="bi bi-fire text-danger me-2"></i>Популярні фільми</h2>
+            <p class="text-muted">Топ фільмів за версією TMDb</p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+            {% for movie in popular_movies_page_obj %}
+                {% include 'movies/movie_card.html' with movie=movie %}
+            {% endfor %}
+        </div>
+
+        {% if popular_movies_page_obj.has_other_pages %}
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    {% if popular_movies_page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link rounded-start-pill" href="?page_popular=1{% if query %}&query={{ query }}{% endif %}">
+                                <i class="bi bi-chevron-double-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page_popular={{ popular_movies_page_obj.previous_page_number }}{% if query %}&query={{ query }}{% endif %}">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    {% for num in popular_movies_page_obj.paginator.page_range %}
+                        {% if popular_movies_page_obj.number == num %}
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">{{ num }}</span>
+                            </li>
+                        {% elif num > popular_movies_page_obj.number|add:'-3' and num < popular_movies_page_obj.number|add:'3' %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page_popular={{ num }}{% if query %}&query={{ query }}{% endif %}">{{ num }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if popular_movies_page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page_popular={{ popular_movies_page_obj.next_page_number }}{% if query %}&query={{ query }}{% endif %}">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-end-pill" href="?page_popular={{ popular_movies_page_obj.paginator.num_pages }}{% if query %}&query={{ query }}{% endif %}">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+    {% endif %}
+</div>
+
+<style>
+    .section-header {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        padding-bottom: 1rem;
+    }
+
+    .section-title {
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    .empty-state {
+        background-color: #f8f9fa;
+        border-radius: 12px;
+    }
+
+    .cta-card {
+        background: linear-gradient(135deg, #f6f7f9 0%, #ffffff 100%);
+        border-radius: 16px;
+    }
+
+    .page-link {
+        margin: 0 0.25rem;
+        border-radius: 50% !important;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .page-item.active .page-link {
+        background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    }
+</style>
+{% endblock %}
